@@ -1,9 +1,9 @@
-A ElectronJs App
+An ElectronJs App
 
-git clone https://github.com/TobiasCoding/workspace-and-gadgets.git
+> git clone https://github.com/TobiasCoding/workspace-and-gadgets.git
 
-cd workspace-and-gadgets
+> cd workspace-and-gadgets
 
-npm install
+> npm install
 
-npm test
+> npm test
