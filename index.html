@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gadgets Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="dashboard">
+    <!-- Gadgets will be loaded here -->
+  </div>
+  <script>
+    // Load gadgets
+    const gadgets = ['gadget1', 'gadget2'];
+    const dashboard = document.getElementById('dashboard');
+    
+    gadgets.forEach((gadget, index) => {
+      const iframe = document.createElement('iframe');
+      iframe.src = `gadgets/${gadget}/index.html?gadgetId=${index + 1}`;
+      iframe.classList.add('gadget');
+      iframe.dataset.gadgetId = index + 1;
+      dashboard.appendChild(iframe);
+    });
+  </script>
+</body>
+</html>

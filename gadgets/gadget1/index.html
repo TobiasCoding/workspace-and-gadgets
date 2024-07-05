@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gadget</title>
+  <link rel="stylesheet" href="../../style.css">
+  <style>
+    .gadget-header {
+      background-color: #444;
+      color: white;
+      padding: 5px;
+      cursor: move;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .gadget-close {
+      cursor: pointer;
+      margin-right: 5px;
+    }
+
+    .gadget-content {
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="gadget-header">
+    Gadget 1
+    <span class="gadget-close" onclick="closeGadget()">❌</span>
+  </div>
+  <div class="gadget-content">
+    <!-- Aquí se mostrarán los datos cargados -->
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

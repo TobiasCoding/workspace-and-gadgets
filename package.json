@@ -1,0 +1,16 @@
+{
+  "name": "electron_gadgets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron . --trace-warnings"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^31.1.0",
+    "sqlite3": "^5.1.7"
+  }
+}
